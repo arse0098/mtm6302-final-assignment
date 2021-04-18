@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Final Assignment</title>
+</head>
+<body>
+    <div id="main">
+        <div id="main-center">
+            <div id="greeting"></div>
+    
+            <div>
+                <span id="time"></span>
+                <span id="ampm"></span>
+            </div>
+        </div>
+    </div>
+
+    <div id="settings">
+        <h2>Settings</h2>
+        <div>
+            <input id="setting24h" type="checkbox"><label for="setting24h">24 Hour Clock</label>
+        </div>
+
+        <div>
+            <input id="settingseconds" type="checkbox"><label for="settingseconds">Show Seconds</label>
+        </div>
+        <img id="settingsbutton" src="images/gear-icon.webp">
+    </div>
+
+    <div id="more">
+        <div>
+            <span class="title">DAY OF THE WEEK</span>
+            <span class="answer" id="dayofweek"></span>
+        </div>
+
+        <div>
+            <span class="title">DAY OF THE MONTH</span>
+            <span class="answer" id="dayofmonth"></span>
+        </div>
+
+        <div>
+            <span class="title">DAY OF THE YEAR</span>
+            <span class="answer" id="dayofyear"></span>
+        </div>
+
+        <div>
+            <span class="title">WEEK OF THE YEAR</span>
+            <span class="answer" id="weekofyear"></span>
+        </div>
+    
+        <button id="morebutton">More</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

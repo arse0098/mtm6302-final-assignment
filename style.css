@@ -1,0 +1,101 @@
+body {
+    background-color: black;
+    background-size: cover;
+    overflow: hidden;
+    background-repeat: no-repeat;
+}
+
+.title {
+    display: block;
+}
+
+.answer {
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+#main {
+    margin: auto;
+    text-align: center;
+    color: white;
+    font-size: 5rem;
+    padding-top: 3rem;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+#main-center {
+    margin: auto;
+}
+
+#settingsbutton {
+    height: 75px;
+    position: absolute;
+    top: 0;
+    right: -75px;
+    z-index: 100;
+}
+
+#settings {
+    height: 100%;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    padding: 2rem;
+
+    color: white;
+    background-color: darkred;
+
+    transform: translate(-100%);
+    transition: transform 300ms;
+}
+
+#settings.active {
+    transform: none;
+}
+
+#morebutton {
+    height: 50px;
+    width: 100px;
+    position: absolute;
+    top: -75px;
+    left: 20px;
+    z-index: 100;
+    font-size: 1.5rem;
+}
+
+#more {
+    width: 100%;
+    position: fixed;
+    z-index: 50;
+    bottom: 0;
+    left: 0;
+    padding: 2rem;
+
+    color: white;
+    background-color: darkred;
+    text-align: center;
+
+    transform: translateY(100%);
+    transition: transform 300ms;
+
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 1.5rem;
+}
+
+#more.active {
+    transform: none;
+}
+
+@media (min-width: 640px) {
+    #more {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 1.5rem;
+    }
+}
